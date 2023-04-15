@@ -1,0 +1,164 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set a background color and font */
+  body {
+    background-color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Style the wrapper */
+  .wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* Style the header */
+  header {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+    text-shadow: 2px 2px #f2f2f2;
+  }
+  
+  /* Style the form */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Style the rows */
+  .row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Style the labels */
+  label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+  }
+  
+  /* Style the textareas and selects */
+  textarea,
+  select {
+    padding: 10px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    height: 100px;
+    resize: none;
+  }
+  
+  /* Style the select outer div */
+  .outer {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the select */
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+  }
+  
+  /* Style the button */
+  button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  /* Style the button hover */
+  button:hover {
+    background-color: #555;
+  }
+  
+  /* Style the success message */
+  .success {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the error message */
+.error {
+margin-top: 30px;
+padding: 20px;
+background-color: #dc3545;
+color: #fff;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the speech bubble icon */
+.speech-bubble {
+position: absolute;
+top: 50%;
+right: 10px;
+transform: translateY(-50%);
+width: 40px;
+height: 40px;
+background-color: #333;
+color: #fff;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+cursor: pointer;
+transition: background-color 0.2s ease-in-out;
+}
+
+/* Style the speech bubble hover */
+.speech-bubble:hover {
+background-color: #555;
+}
+
+/* Style the speech bubble icon before element */
+.speech-bubble::before {
+content: "\f130";
+font-family: "Font Awesome 5 Free";
+font-size: 1.5rem;
+}
+
+/* Style the speech bubble icon before element on hover */
+.speech-bubble:hover::before {
+content: "\f131";
+}
